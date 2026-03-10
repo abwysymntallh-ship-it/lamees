@@ -1,10 +1,8 @@
-  backend:
+backend:
   name: git-gateway
-  branch: main # تأكد أن هذا اسم الفرع في GitHub عندك
-
+  branch: main
 media_folder: "images"
 public_folder: "/images"
-
 collections:
   - name: "pages"
     label: "تعديل الصفحات"
@@ -14,21 +12,24 @@ collections:
         file: "index.html"
         fields:
           - { label: "العنوان", name: "title", widget: "string" }
-
+      - name: "page1"
+        label: "الصفحة الأولى"
+        file: "page1.html"
+        fields:
+          - { label: "العنوان", name: "title", widget: "string" }
       - name: "page2"
         label: "الصفحة الثانية"
         file: "page2.html"
         fields:
           - { label: "العنوان", name: "title", widget: "string" }
-
       - name: "page3"
         label: "الصفحة الثالثة"
         file: "page3.html"
         fields:
           - { label: "العنوان", name: "title", widget: "string" }
-
       - name: "page4"
         label: "الصفحة الرابعة"
         file: "page4.html"
         fields:
           - { label: "العنوان", name: "title", widget: "string" }
+          
