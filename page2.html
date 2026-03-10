@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصور الخاص بي</title>
+    <style>
+        body {
+            background-color: #FFF0F5; /* لون زهري فاتح */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #D81B60;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #D81B60;
+            padding-bottom: 10px;
+        }
+
+        /* تنسيق حاوية الصور لتكون شبكة مرنة */
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        /* تنسيق بطاقة الصورة */
+        .image-card {
+            background-color: white;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-card:hover {
+            transform: scale(1.03); /* تأثير تكبير بسيط عند المرور بالماوس */
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* لضمان عدم تمدد الصورة بشكل خاطئ */
+            border-radius: 10px;
+        }
+
+        .back-link {
+            margin-top: 40px;
+            padding: 12px 30px;
+            background-color: #D81B60;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background-color: #ad144b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>بيجامات الماتشي (ربيعي ) </h1>
+
+    <div class="container">
+        <div class="image-card"> <img src="بيجامات الماتشي (ربيعي ) 1.jpg" alt="1 صورة"> ></div>
+        <div class="image-card"><img src= "بيجامات الماتشي (ربيعي )2.jpg" alt="صورة 2"></div>
+        <div class="image-card"><img src= "بيجامات الماتشي (ربيعي )3.jpg" alt="صورة 3"></div>
+        <div class="image-card"><img src="بيجامات الماتشي (ربيعي )4.jpg" alt="صورة 4"></div>
+        <div class="image-card"><img src="بيجامات الماتشي (ربيعي )5.jpg" alt="صورة 5"></div>
+        <div class="image-card"><img src="بيجامات الماتشي (ربيعي )6.jpg" alt="صورة 6"></div>
+        <div class="image-card"><img src="بيجامات الماتشي (ربيعي )7.jpg" alt="صورة 7"></div>
+        <div class="image-card"><img src="بيجامات الماتشي (ربيعي )8.jpg" alt="صورة 8"></div>
+        <div class="image-card"><img src="بيجامات الماتشي (ربيعي )9.jpg" alt="صورة 9"></div>
+    
+   <div class="bottom-nav">
+        <a href= "index.html">الأولى</a>
+        <a href="page2.html">الثانية</a>
+        <a href="page3.html">الثالثة</a>
+        <a href="page4.html" class="active">الرابعة</a>
+ 
+</body>
+</html>

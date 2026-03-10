@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرابعة - 11 صورة</title>
+    <style>
+        body {
+            background-color: #FFF0F5; /* لون زهري فاتح */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 90px; /* مسافة أمان للشريط السفلي */
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1 { color: #D81B60; margin-bottom: 30px; border-bottom: 3px solid #D81B60; padding-bottom: 10px; }
+
+        /* تنسيق شبكة الصور لـ 11 صورة */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        .image-card {
+            background: white;
+            padding: 8px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .image-card:hover { transform: translateY(-5px); }
+
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* شريط التنقل السفلي الفوشيا الثابت */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #D81B60;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
+        }
+
+        .bottom-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* تمييز الصفحة الحالية */
+        .active { border-bottom: 2px solid white; padding-bottom: 3px; }
+    </style>
+</head>
+<body>
+
+    <h1> بيجامات صيفية قطنية</h1>
+
+    <div class="container">
+        <div class="image-card"><img src="بيجامات صيفية قطنية 1.jpg"></div>
+        <div class="image-card"><img src="بيجامات صيفية قطنية 2.jpg"></div>
+        <div class="image-card"><img src="بيجامات صيفية قطنية 3.jpg"></div>
+        <div class="image-card"><img src="بيجامات صيفية قطنية 4.jpg"></div>
+        <div class="image-card"><img src="بيجامات صيفية قطنية 5.jpg"></div>
+        <div class="image-card"><img src="بيجامات صيفية قطنية 6.jpg"></div>
+        <div class="image-card"><img src="بيجامات صيفية قطنية 7.jpg"></div>
+        <div class="image-card"><img src="بيجامات صيفية قطنية 8.jpg"></div>
+        <div class="image-card"><img src="بيجامات صيفية قطنية 9.jpg"></div>
+        <div class="image-card"><img src="بيجامات صيفية قطنية 10.jpg"></div>
+        <div class="image-card"><img src="بيجامات صيفية قطنية 11.jpg"></div>
+    </div>
+
+    <div class="bottom-nav">
+        <a href="page1.html">الأولى</a>
+        <a href="page2.html">الثانية</a>
+        <a href="page3.html">الثالثة</a>
+        <a href="page4.html" class="active">الرابعة</a>
+    </div>
+
+</body>
+</html>
